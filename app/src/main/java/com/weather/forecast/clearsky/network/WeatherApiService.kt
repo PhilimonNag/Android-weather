@@ -1,12 +1,19 @@
 package com.weather.forecast.clearsky.network
 
+import com.google.gson.JsonObject
+import com.weather.forecast.clearsky.model.ImageResponse
 import com.weather.forecast.clearsky.model.WeatherModel
+import retrofit2.Call
 import retrofit2.http.GET
+import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface WeatherApiService {
-    @GET(NetworkingConstants.GET_WEATHER)
+    @GET("weather/{q}")
     suspend fun getWeatherData(
-        @Query("q") city: String
+        @Path("q") city: String
     ): WeatherModel?
+
+    @GET("image/{image}")
+    suspend fun getImageData(@Path("image")imageText:String):ImageResponse?
 }

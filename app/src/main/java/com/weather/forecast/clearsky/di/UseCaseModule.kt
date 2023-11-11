@@ -15,4 +15,5 @@ object UseCaseModule {
     fun providesDataUseCase(weatherRepository: WeatherRepository): WeatherUseCase {
         return WeatherUseCase(weatherRepository)
     }
+
 }
