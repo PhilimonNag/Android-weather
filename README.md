@@ -1,5 +1,9 @@
 # Android-weather
-![app](https://github.com/PhilimonNag/Android-weather/assets/70008047/a1ed808c-097d-4b14-8ad3-f94a80914a02)
+
+
+
+![app](https://github.com/PhilimonNag/Android-weather/assets/70008047/f385e6eb-7a35-47d4-997f-1cc417b9bf29)
+
 
 ## Overview
 
